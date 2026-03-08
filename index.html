@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luís Paulo | Portfólio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<img src="foto.jpg" class="foto">
+
+<h1>Luís Paulo</h1>
+
+<p>Estudante de Tecnologia / Futuro Desenvolvedor</p>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<nav id="menu">
+
+<a href="#sobre">Sobre</a>
+<a href="#skills">Habilidades</a>
+<a href="#projetos">Projetos</a>
+<a href="#contato">Contato</a>
+
+</nav>
+
+<button class="dark-btn" onclick="darkMode()">🌙</button>
+
+</header>
+
+<section id="sobre">
+
+<h2>Sobre mim</h2>
+
+<p>
+Olá! Meu nome é Luís Paulo. Estou estudando programação e
+desenvolvimento web. Meu objetivo é evoluir como desenvolvedor
+criando projetos cada vez mais avançados.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Habilidades</h2>
+
+<p>HTML</p>
+<div class="barra"><div class="nivel html"></div></div>
+
+<p>CSS</p>
+<div class="barra"><div class="nivel css"></div></div>
+
+<p>JavaScript</p>
+<div class="barra"><div class="nivel js"></div></div>
+
+<p>Python</p>
+<div class="barra"><div class="nivel python"></div></div>
+
+</section>
+
+<section id="projetos">
+
+<h2>Projetos</h2>
+
+<div class="projeto">
+
+<h3>Site Portfólio</h3>
+<p>Meu primeiro site usando HTML e CSS.</p>
+
+</div>
+
+<div class="projeto">
+
+<h3>Projeto futuro</h3>
+<p>Novos projetos serão adicionados em breve.</p>
+
+</div>
+
+</section>
+
+<section id="contato">
+
+<h2>Contato</h2>
+
+<p>Email: seuemail@email.com</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 - Luís Paulo</p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+
+</script>
+
+</body>
+
+</html>

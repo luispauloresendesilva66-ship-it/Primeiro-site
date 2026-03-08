@@ -1,0 +1,149 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+transition:0.3s;
+}
+
+header{
+background:#222;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+.foto{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:10px;
+}
+
+.menu-btn{
+display:none;
+background:#333;
+color:white;
+border:none;
+font-size:25px;
+cursor:pointer;
+}
+
+.dark-btn{
+margin-top:10px;
+padding:5px 10px;
+cursor:pointer;
+}
+
+nav{
+background:#333;
+text-align:center;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00bfff;
+}
+
+section{
+background:white;
+max-width:900px;
+margin:20px auto;
+padding:20px;
+border-radius:8px;
+animation:fade 1s;
+}
+
+.barra{
+background:#ddd;
+height:10px;
+border-radius:5px;
+margin-bottom:10px;
+}
+
+.nivel{
+height:10px;
+background:#007BFF;
+border-radius:5px;
+}
+
+.html{width:90%;}
+.css{width:80%;}
+.js{width:60%;}
+.python{width:70%;}
+
+.projeto{
+background:#f9f9f9;
+padding:15px;
+margin-top:10px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.projeto:hover{
+transform:scale(1.05);
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+/* modo escuro */
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark section{
+background:#222;
+}
+
+.dark nav{
+background:#000;
+}
+
+.dark .projeto{
+background:#333;
+color:white;
+}
+
+/* celular */
+
+@media (max-width:600px){
+
+.menu-btn{
+display:block;
+margin:auto;
+}
+
+nav{
+display:none;
+flex-direction:column;
+}
+
+nav a{
+display:block;
+padding:10px;
+}
+
+nav.active{
+display:flex;
+}
+
+}
